@@ -1,0 +1,44 @@
+:root {
+    /* Cores */
+    --c-theme-dark: #8F0101;
+    --c-theme: #B81515;
+    --c-dark-dark: #000000;
+    --c-dark: #222222;
+    --c-dark-lighter: #8C8C8C;
+    --c-light-darker: #D9D9D9;
+    --c-light: #F5F5F5;
+    --c-light-lighter: #FFFFFF;
+
+    /* Fontes */
+    --fm-normal: "Montserrat", sans-serif;
+
+    /* Font Sizes */
+    --fs-body: 1rem;
+    --fs-body2: calc(var(--fs-body) * 1.25);
+    --fs-body3: calc(var(--fs-body) * 1.5);
+    --fs-body4: calc(var(--fs-body) * 2);
+    --fs-h1: calc(var(--fs-body) * 3);
+    --fs-h2: calc(var(--fs-body) * 2.5);
+    --fs-h3: calc(var(--fs-body) * 2);
+    --fs-h4: calc(var(--fs-body) * 1.75);
+    --fs-subtitle: calc(var(--fs-body) * 0.875);
+
+    /* Font Weight */
+    --fw-normal: 400;
+    --fw-bold: 700;
+
+    /* Spacing */
+    --sp-s: calc(var(--fs-body) * 1);
+    --sp-normal: calc(var(--fs-body) * 1.5);
+    --sp-l: calc(var(--fs-body) * 2);
+    --sp-xl: calc(var(--fs-body) * 2.25);
+    --sp-xxl: calc(var(--fs-body) * 5.5);
+}
+
+body {
+    font-family: var(--fm-normal)
+}
+
+p {
+    padding: var(--sp-normal);
+}
