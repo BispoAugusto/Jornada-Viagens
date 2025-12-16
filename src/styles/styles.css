@@ -1,44 +1,52 @@
 :root {
-    /* Cores */
-    --c-theme-dark: #8F0101;
-    --c-theme: #B81515;
-    --c-dark-dark: #000000;
-    --c-dark: #222222;
-    --c-dark-lighter: #8C8C8C;
-    --c-light-darker: #D9D9D9;
-    --c-light: #F5F5F5;
-    --c-light-lighter: #FFFFFF;
+    /* Design Tokens: Colors */
+    --c-theme-dark: #8F0101;     /* Nível mais escuro do tema */
+    --c-theme: #B81515;          /* Cor primária do tema */
+    
+    /* Escala de Cinzas */
+    --c-gray-900: #000000;       /* Preto absoluto */
+    --c-gray-800: #222222;       /* Cinza muito escuro */
+    --c-gray-500: #8C8C8C;       /* Cinza médio */
+    --c-gray-200: #D9D9D9;       /* Cinza claro */
+    --c-gray-100: #F5F5F5;       /* Off-white */
+    --c-gray-0: #FFFFFF;         /* Branco absoluto */
 
-    /* Fontes */
+    /* Design Tokens: Typography */
     --fm-normal: "Montserrat", sans-serif;
 
-    /* Font Sizes */
-    --fs-body: 1rem;
-    --fs-body2: calc(var(--fs-body) * 1.25);
-    --fs-body3: calc(var(--fs-body) * 1.5);
-    --fs-body4: calc(var(--fs-body) * 2);
-    --fs-h1: calc(var(--fs-body) * 3);
-    --fs-h2: calc(var(--fs-body) * 2.5);
-    --fs-h3: calc(var(--fs-body) * 2);
-    --fs-h4: calc(var(--fs-body) * 1.75);
-    --fs-subtitle: calc(var(--fs-body) * 0.875);
+    /* Escala de Tamanhos de Fonte (Base: 1rem / 16px) */
+    --fs-h1: calc(var(--fs-base) * 3);         /* 48px */
+    --fs-h2: calc(var(--fs-base) * 2.5);       /* 40px */
+    --fs-h3: calc(var(--fs-base) * 2);         /* 32px */
+    --fs-h4: calc(var(--fs-base) * 1.75);      /* 28px */
+    
+    --fs-xl: calc(var(--fs-base) * 1.5);       /* 24px (Corpo extra large) */
+    --fs-lg: calc(var(--fs-base) * 1.25);      /* 20px (Corpo large) */
+    --fs-base: 1rem;                           /* 16px (Corpo padrão) */
+    --fs-sm: calc(var(--fs-base) * 0.875);     /* 14px (Corpo small/legenda) */
 
-    /* Font Weight */
     --fw-normal: 400;
     --fw-bold: 700;
 
-    /* Spacing */
-    --sp-s: calc(var(--fs-body) * 1);
-    --sp-normal: calc(var(--fs-body) * 1.5);
-    --sp-l: calc(var(--fs-body) * 2);
-    --sp-xl: calc(var(--fs-body) * 2.25);
-    --sp-xxl: calc(var(--fs-body) * 5.5);
+    /* Design Tokens: Spacing Scale (Base size: 16px) */
+    --sp-xs: calc(var(--fs-base) * 0.25);      /* 4px */
+    --sp-s: calc(var(--fs-base) * 0.5);       /* 8px */
+    --sp-m: calc(var(--fs-base) * 1);         /* 16px */
+    --sp-l: calc(var(--fs-base) * 1.5);       /* 24px */
+    --sp-xl: calc(var(--fs-base) * 2);        /* 32px */
+    --sp-xxl: calc(var(--fs-base) * 3);       /* 48px */
+    --sp-xxxl: calc(var(--fs-base) * 4);      /* 64px */
+    --sp-xxxxl: calc(var(--fs-base) * 5.5);    /* 88px */
 }
 
 body {
-    font-family: var(--fm-normal)
+    font-family: var(--fm-normal);
+    font-size: var(--fs-base);
+    font-weight: var(--fw-normal);
+    background-color: var(--c-gray-0);
+    color: var(--c-gray-900); 
 }
 
 p {
-    padding: var(--sp-normal);
+    padding: var(--sp-m);
 }
