@@ -1,0 +1,31 @@
+.hero-img {
+    left: 0;
+    background: url(../assets/mobile/Homepage/Banner\ homepage.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+
+.hero-texto {
+    font-size: var(--fs-lg);
+    text-align: center;
+    line-height: var(--lh-auto);
+}
+
+@media screen and (min-width: 768px) {
+    .hero-img {
+        background: url(../assets/Tablet/Homepage/Banner\ tablet.png) no-repeat;
+        background-size: cover;
+        height: 620px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .hero-img {
+        background: url(../assets/Desktop/Homepage/Banner.png) no-repeat;
+        background-size: cover;
+        height: 620px;
+        width: 100%;
+    }
+}
