@@ -32,6 +32,8 @@
     --fw-normal: 400;
     --fw-bold: 700;
 
+    --lh-auto: calc(1em + 12px);
+
     /* Design Tokens: Spacing Scale (Base size: 16px) */
     --sp-xs: calc(var(--fs-base) * 0.25);      /* 4px */
     --sp-s: calc(var(--fs-base) * 0.5);       /* 8px */
@@ -41,7 +43,7 @@
     --sp-xxl: calc(var(--fs-base) * 2.5);       /* 40px */
     --sp-xxxl: calc(var(--fs-base) * 3);       /* 48px */
     --sp-2xl: calc(var(--sp-xl) * 2);      /* 64px */
-    --sp-3xl: calc(var(--sp-xl) * 3);    /* 96px */
+    --sp-3xl: calc(var(--sp-xl) * 2.75);    /* 88px */
     --sp-4xl: calc(var(--sp-xl) * 4);      /* 128px */
 }
 
@@ -50,7 +52,7 @@ body {
     font-size: var(--fs-base);
     font-weight: var(--fw-normal);
     background-color: var(--c-gray-0);
-    color: var(--c-gray-900); 
+    color: var(--c-gray-900);
 }
 
 p {
