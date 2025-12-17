@@ -1,3 +1,6 @@
+@import url(global.css);
+@import url(header.css);
+
 :root {
     /* Design Tokens: Colors */
     --c-theme-dark: #8F0101;     /* Nível mais escuro do tema */
@@ -34,9 +37,11 @@
     --sp-m: calc(var(--fs-base) * 1);         /* 16px */
     --sp-l: calc(var(--fs-base) * 1.5);       /* 24px */
     --sp-xl: calc(var(--fs-base) * 2);        /* 32px */
-    --sp-xxl: calc(var(--fs-base) * 3);       /* 48px */
-    --sp-xxxl: calc(var(--fs-base) * 4);      /* 64px */
-    --sp-xxxxl: calc(var(--fs-base) * 5.5);    /* 88px */
+    --sp-xxl: calc(var(--fs-base) * 2.5);       /* 40px */
+    --sp-xxxl: calc(var(--fs-base) * 3);       /* 48px */
+    --sp-2xl: calc(var(--sp-xl) * 2);      /* 64px */
+    --sp-3xl: calc(var(--sp-xl) * 3);    /* 96px */
+    --sp-4xl: calc(var(--sp-xl) * 4);      /* 128px */
 }
 
 body {
@@ -49,4 +54,8 @@ body {
 
 p {
     padding: var(--sp-m);
+}
+
+a {
+    text-decoration: none;
 }
