@@ -15,25 +15,40 @@
     <link rel="stylesheet" href="./src/styles/styles.css" />
   </head>
   <body>
-    <header class="cabecalho">
+    <header class="cabecalho container">
       <nav class="navegacao">
-        <img
-          src="src/assets/@Header e rodapés/Símbolo_white.png"
-          alt="Logo Jornada"
-          class="logo"
-        />
-        <input type="checkbox" id="menu-hamburger" />
-        <label for="menu-hamburger">
+        <a href="#">
           <img
-            src="src/assets/@Header e rodapés/Menu-branco.svg"
-            alt="menu-hamburger"
+            src="src/assets/@Header e rodapés/Logo-branco.png"
+            alt="Logo Jornada"
+            class="logo-branco-grande"
+            width="260px"
+            height="64px"
           />
-        </label>
-        <ul class="menu-hamburger__lista">
-          <li class="menu-hamburger__lista-item"><a href="#">Blog</a></li>
-          <li class="menu-hamburger__lista-item"><a href="#">Pacote de Viagens</a></li>
-          <li class="menu-hamburger__lista-item"><a href="#">Contato</a></li>
-        </ul>
+          <img
+            src="src/assets/@Header e rodapés/Símbolo_white.png"
+            alt="Logo Jornada"
+            class="logo-branco-pequena"
+            width="64px"
+            height="64px"
+          />
+        </a>
+        <div class="navegacao-menu">
+          <label for="menu-hamburger" class="menu-hamburger-label">
+            <img
+              src="src/assets/@Header e rodapés/Menu-branco.svg"
+              alt="menu-hamburger"
+            />
+          </label>
+          <input type="checkbox" id="menu-hamburger" hidden />
+          <nav class="menu-lista container">
+              <ul class="lista-links">
+                <li class="lista-item"><a href="#">Blog</a></li>
+                <li class="lista-item"><a href="#">Pacote de Viagens</a></li>
+                <li class="lista-item"><a href="#">Contato</a></li>
+              </ul>
+          </nav>
+        </div>
       </nav>
     </header>
   </body>
